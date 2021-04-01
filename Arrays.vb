@@ -6,7 +6,8 @@ Module Arrays
     Sub Main()
         'ArrayExample()
         'ArrayMultiDimesional()
-        ArrayItteration()
+        'ArrayItteration()
+        SplitIntoArray()
         Console.Read()
     End Sub
 
@@ -62,6 +63,18 @@ Module Arrays
         'Console.WriteLine(people(0, 6))
 
 
+    End Sub
+
+
+    Sub SplitIntoArray()
+        Dim names() As String
+        Dim dataString As String = "$$VALBob,Joe,Mary,$$VALBilly,Jane"
+
+        names = Split(dataString, "$$VAL")
+
+        names = Split(names(1), ",")
+
+        Console.Read()
     End Sub
 
 
